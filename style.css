@@ -73,6 +73,7 @@ main {
 .card h1 {
   margin-bottom: var(--spacing-400);
   line-height:1;
+  font-size:var(--heading-ft-sz);
 }
 /* FORM */
 form {
