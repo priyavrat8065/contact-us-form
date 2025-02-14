@@ -53,6 +53,7 @@ img {
 }
 body {
   font-family: var(--ff);
+  color:var(--grey-900);
 }
 main {
   min-height: 100vh;
