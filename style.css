@@ -9,3 +9,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* CSS VARIABLES */
+::root {
+  /* COLORS */
+  --main-bg: hsl(148, 38%, 91%);
+  --card-bg: hsl(0, 0%, 100%);
+  --button-bg: hsl(169, 82%, 27%);
+  --grey-900: hsl(187, 24%, 22%);
+  --errors-color: hsl(0, 66%, 54%);
+  --textbox-border-color: hsl(186, 15%, 59%);
+}
