@@ -107,6 +107,9 @@ form {
   padding: var(--spacing-150) var(--spacing-300);
   border-radius:8px;
 }
+.query-type {
+  font-size:var(--body-ft-sz-md);
+}
 /* SUBMIT BUTTON */
 .btn {
   border:none;
