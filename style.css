@@ -28,7 +28,7 @@ img {
 }
 
 /* CSS VARIABLES */
-::root {
+:root {
   /* COLORS */
   --main-bg: hsl(148, 38%, 91%);
   --card-bg: hsl(0, 0%, 100%);
@@ -41,5 +41,28 @@ img {
   --body-ft-sz-md: 1.125rem;
   --body-ft-sz-sm: 1rem;
   --bold-ft-wt: 700;
-  --ff: "karla";
+  --ff: "Karla", sans-serif;
+  /* SPACING */
+  --spacing-100: 0.25rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-1600: 8rem;
+}
+body {
+  font-family: var(--ff);
+}
+main {
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  padding-block: var(--spacing-400);
+}
+.card {
+  width: min(calc(100% - var(--spacing-200) * 2), 46rem);
+  background-color: var(--card-bg);
+  margin-inline: auto;
+  padding: var(--spacing-300);
+  border-radius: 16px;
 }
