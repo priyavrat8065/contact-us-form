@@ -59,10 +59,27 @@ main {
   background-color: var(--main-bg);
   padding-block: var(--spacing-400);
 }
+/* CARD */
 .card {
   width: min(calc(100% - var(--spacing-200) * 2), 46rem);
   background-color: var(--card-bg);
   margin-inline: auto;
   padding: var(--spacing-300);
   border-radius: 16px;
+}
+/* FORM HEADING */
+.card h1 {
+  margin-bottom: var(--spacing-400);
+}
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+/* FORM CONTAINER EXCLUDING SUBMIT AND CONSENT CHECKBOX */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
 }
