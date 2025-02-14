@@ -9,6 +9,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* karla-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/karla-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* karla-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/karla-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* CSS VARIABLES */
 ::root {
   /* COLORS */
@@ -18,4 +36,10 @@ img {
   --grey-900: hsl(187, 24%, 22%);
   --errors-color: hsl(0, 66%, 54%);
   --textbox-border-color: hsl(186, 15%, 59%);
+  /* FONTS */
+  --heading-ft-sz: 2rem;
+  --body-ft-sz-md: 1.125rem;
+  --body-ft-sz-sm: 1rem;
+  --bold-ft-wt: 700;
+  --ff: "karla";
 }
