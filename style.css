@@ -107,4 +107,17 @@ form {
   padding: var(--spacing-150) var(--spacing-300);
   border-radius:8px;
 }
+/* SUBMIT BUTTON */
+.btn {
+  border:none;
+  padding: var(--spacing-200) var(--spacing-500);
+  background-color:var(--button-bg);
+  border-radius:8px;
+  color:var(--card-bg);
+  cursor:pointer;
+  font-size:var(--body-ft-sz-md);
+  font-weight: var(--bold-ft-wt);
+  font-family: var(--ff);
+  line-height: 1.5;
+}
 
