@@ -43,7 +43,7 @@ img {
   --bold-ft-wt: 700;
   --ff: "Karla", sans-serif;
   /* SPACING */
-  --spacing-100: 0.25rem;
+  --spacing-100: 0.5rem;
   --spacing-150: 0.75rem;
   --spacing-200: 1rem;
   --spacing-300: 1.5rem;
@@ -97,6 +97,17 @@ form {
   margin-left: var(--spacing-100);
   color: var(--button-bg);
 }
+/* NAME */
+.name {
+  display: flex;
+  flex-direction: column;
+  gap:var(--spacing-300)
+}
+.first-name, .last-name {
+  display: flex;
+  flex-direction: column;
+  gap:var(--spacing-100);
+}
 /* QUERY */
 .query {
   /* OVERRIDE SPACING-100 ABOVE */
@@ -108,6 +119,11 @@ form {
   border: 1px solid var(--textbox-border-color);
   padding: var(--spacing-150) var(--spacing-300);
   border-radius: 8px;
+}
+.query-btns {
+  display: inline-flex;
+  flex-direction: column;
+  gap:var(--spacing-200);
 }
 .query-type {
   font-size: var(--body-ft-sz-md);
@@ -165,4 +181,21 @@ form {
 /* ERRORS MESSAGE */
 .error-msg, .invalid-email {
   color:var(--errors-color)
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width:48em) {
+  .name, .query-btns {
+    flex-direction:row;
+    gap:var(--spacing-200);
+  }
+  .name > *, .query-btns > * {
+    flex-grow:1;
+  }
+  .message textarea {
+    height:6em;
+  }
 }
