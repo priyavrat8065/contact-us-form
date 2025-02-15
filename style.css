@@ -116,6 +116,12 @@ form {
 .message textarea {
   height:18.462em;
 }
+/* CONSENT */
+.consent {
+  display: flex;
+  flex-direction: column;
+  gap:var(--spacing-100);
+}
 /* SUBMIT BUTTON */
 .btn {
   border: none;
@@ -155,4 +161,8 @@ form {
   margin-top: var(--spacing-100);
   color: var(--main-bg);
   font-size: var(--body-ft-sz-sm);
+}
+/* ERRORS MESSAGE */
+.error-msg, .invalid-email {
+  color:var(--errors-color)
 }
