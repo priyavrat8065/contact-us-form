@@ -53,8 +53,8 @@ img {
 }
 body {
   font-family: var(--ff);
-  color:var(--grey-900);
-  line-height:1.5;
+  color: var(--grey-900);
+  line-height: 1.5;
 }
 main {
   min-height: 100vh;
@@ -72,8 +72,8 @@ main {
 /* FORM HEADING */
 .card h1 {
   margin-bottom: var(--spacing-400);
-  line-height:1;
-  font-size:var(--heading-ft-sz);
+  line-height: 1;
+  font-size: var(--heading-ft-sz);
 }
 /* FORM */
 form {
@@ -94,34 +94,61 @@ form {
   gap: var(--spacing-100);
 }
 .required {
-  margin-left:var(--spacing-100);
-  color:var(--button-bg);
+  margin-left: var(--spacing-100);
+  color: var(--button-bg);
 }
 /* QUERY */
 .query {
   /* OVERRIDE SPACING-100 ABOVE */
-  gap:var(--spacing-200);
+  gap: var(--spacing-200);
 }
 /* INPUT TEXT BOX AND QUERY TYPE BORDER */
-.query-type, .form-container div input {
-  border:1px solid var(--textbox-border-color);
+.query-type,
+.form-container div input {
+  border: 1px solid var(--textbox-border-color);
   padding: var(--spacing-150) var(--spacing-300);
-  border-radius:8px;
+  border-radius: 8px;
 }
 .query-type {
-  font-size:var(--body-ft-sz-md);
+  font-size: var(--body-ft-sz-md);
 }
 /* SUBMIT BUTTON */
 .btn {
-  border:none;
+  border: none;
   padding: var(--spacing-200) var(--spacing-500);
-  background-color:var(--button-bg);
-  border-radius:8px;
-  color:var(--card-bg);
-  cursor:pointer;
-  font-size:var(--body-ft-sz-md);
+  background-color: var(--button-bg);
+  border-radius: 8px;
+  color: var(--card-bg);
+  cursor: pointer;
+  font-size: var(--body-ft-sz-md);
   font-weight: var(--bold-ft-wt);
   font-family: var(--ff);
   line-height: 1.5;
 }
-
+/* SUCCESS MESSAGE */
+.success-msg {
+  position: fixed;
+  top: var(--spacing-300);
+  background-color: var(--grey-900);
+  width: min(calc(100% - var(--spacing-300) * 2), 450px);
+  color: white;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 8px;
+  padding: var(--spacing-300);
+}
+.success-msg__header {
+  display: flex;
+  /*  justify-content: center;*/
+  align-items: center;
+  gap: var(--spacing-100);
+}
+.success-msg__heading {
+  font-size: var(--body-ft-sz-md);
+  font-weight: var(--bold-ft-wt);
+}
+.success-msg__text {
+  margin-top: var(--spacing-100);
+  color: var(--main-bg);
+  font-size: var(--body-ft-sz-sm);
+}
