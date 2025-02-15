@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,6 +22,7 @@
         <form action="">
           <!-- Name -->
           <div class="form-container">
+            <div class="name">
             <div class="first-name">
               <label for="firstName"
                 >First Name<span class="required">*</span></label
@@ -36,6 +37,7 @@
               <input type="text" name="lastName" id="lastName" />
               <span class="error-msg">This field is required</span>
             </div>
+          </div>
             <!-- Email -->
             <div class="email">
               <label for="email">Email<span class="required">*</span></label>
@@ -48,6 +50,7 @@
             <!-- Query -->
             <div class="query">
               <p>Query Type<span class="required">*</span></p>
+              <div class="query-btns">
               <div class="query-type">
                 <input type="radio" name="query" id="enquiry" />
                 <label for="enquiry">General Enquiry</label>
@@ -56,6 +59,7 @@
                 <input type="radio" name="query" id="request" />
                 <label for="request">Support Request</label>
               </div>
+            </div>
               <span class="error-msg">Please select a query type</span>
             </div>
             <!-- Message -->
@@ -69,12 +73,12 @@
           </div>
           <div class="consent">
             <div class="conset-with-label">
-            <input type="checkbox" name="consent" id="consent" />
-            <label for="consent"
-              >I consent to being contacted by the team
-              <span class="required">*</span></label
-            >
-          </div>
+              <input type="checkbox" name="consent" id="consent" />
+              <label for="consent"
+                >I consent to being contacted by the team
+                <span class="required">*</span></label
+              >
+            </div>
             <span class="error-msg"
               >To submit this form, please consent to being contacted</span
             >
@@ -82,7 +86,7 @@
           <button class="btn">Submit</button>
         </form>
       </article>
-      <article class="success-msg">
+      <article class="success-msg hidden">
         <div class="success-msg__header">
           <figure class="success-msg__icon">
             <img src="assets/images/icon-success-check.svg" alt="" />
