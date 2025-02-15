@@ -188,6 +188,9 @@ form {
 }
 
 @media (min-width:48em) {
+  main {
+    padding-block:var(--spacing-1600);
+  }
   .name, .query-btns {
     flex-direction:row;
     gap:var(--spacing-200);
