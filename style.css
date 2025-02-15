@@ -104,13 +104,17 @@ form {
 }
 /* INPUT TEXT BOX AND QUERY TYPE BORDER */
 .query-type,
-.form-container div input {
+.form-container div input, .message textarea {
   border: 1px solid var(--textbox-border-color);
   padding: var(--spacing-150) var(--spacing-300);
   border-radius: 8px;
 }
 .query-type {
   font-size: var(--body-ft-sz-md);
+}
+/* MESSAGE TEXTAREA */
+.message textarea {
+  height:18.462em;
 }
 /* SUBMIT BUTTON */
 .btn {
