@@ -155,8 +155,8 @@ textarea:focus,
 }
 /* SUBMIT BUTTON */
 .btn {
-  width:100%;
-  margin-top:var(--spacing-500);
+  width: 100%;
+  margin-top: var(--spacing-500);
   border: none;
   padding: var(--spacing-200) var(--spacing-500);
   background-color: var(--button-bg);
@@ -212,6 +212,9 @@ textarea:focus,
 @media (min-width: 48em) {
   main {
     padding-block: var(--spacing-1600);
+  }
+  .card {
+    padding: var(--spacing-500);
   }
   .name,
   .query-btns {
