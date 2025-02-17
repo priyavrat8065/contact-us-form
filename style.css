@@ -68,6 +68,9 @@ main {
   margin-inline: auto;
   padding: var(--spacing-300);
   border-radius: 16px;
+  /* display: flex;
+  flex-direction: column;
+  gap:var(--spacing-500); */
 }
 /* FORM HEADING */
 .card h1 {
@@ -101,12 +104,13 @@ form {
 .name {
   display: flex;
   flex-direction: column;
-  gap:var(--spacing-300)
+  gap: var(--spacing-300);
 }
-.first-name, .last-name {
+.first-name,
+.last-name {
   display: flex;
   flex-direction: column;
-  gap:var(--spacing-100);
+  gap: var(--spacing-100);
 }
 /* QUERY */
 .query {
@@ -115,37 +119,44 @@ form {
 }
 /* INPUT TEXT BOX AND QUERY TYPE BORDER */
 .query-type,
-.form-container div input, .message textarea {
+.form-container div input,
+.message textarea {
   border: 1px solid var(--textbox-border-color);
   padding: var(--spacing-150) var(--spacing-300);
   border-radius: 8px;
 }
 /* HOVER EFFECTS ON INPUT BOX */
-input:hover, textarea:hover,
-  input:focus, textarea:focus, .query-type:hover, .query-type:focus {
-outline:1px solid var(--button-bg);
-/* border: 1px solid var(--button-bg); */
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+.query-type:hover,
+.query-type:focus {
+  outline: 1px solid var(--button-bg);
+  /* border: 1px solid var(--button-bg); */
 }
 .query-btns {
   display: inline-flex;
   flex-direction: column;
-  gap:var(--spacing-200);
+  gap: var(--spacing-200);
 }
 .query-type {
   font-size: var(--body-ft-sz-md);
 }
 /* MESSAGE TEXTAREA */
 .message textarea {
-  height:18.462em;
+  height: 18.462em;
 }
 /* CONSENT */
 .consent {
   display: flex;
   flex-direction: column;
-  gap:var(--spacing-100);
+  gap: var(--spacing-100);
 }
 /* SUBMIT BUTTON */
 .btn {
+  width:100%;
+  margin-top:var(--spacing-500);
   border: none;
   padding: var(--spacing-200) var(--spacing-500);
   background-color: var(--button-bg);
@@ -157,7 +168,8 @@ outline:1px solid var(--button-bg);
   font-family: var(--ff);
   line-height: 1.5;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--grey-900);
 }
 /* SUCCESS MESSAGE */
@@ -188,26 +200,29 @@ outline:1px solid var(--button-bg);
   font-size: var(--body-ft-sz-sm);
 }
 /* ERRORS MESSAGE */
-.error-msg, .invalid-email {
-  color:var(--errors-color)
+.error-msg,
+.invalid-email {
+  color: var(--errors-color);
 }
 
 .hidden {
   display: none;
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   main {
-    padding-block:var(--spacing-1600);
+    padding-block: var(--spacing-1600);
   }
-  .name, .query-btns {
-    flex-direction:row;
-    gap:var(--spacing-200);
+  .name,
+  .query-btns {
+    flex-direction: row;
+    gap: var(--spacing-200);
   }
-  .name > *, .query-btns > * {
-    flex-grow:1;
+  .name > *,
+  .query-btns > * {
+    flex-grow: 1;
   }
   .message textarea {
-    height:6em;
+    height: 6em;
   }
 }
