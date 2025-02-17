@@ -28,22 +28,22 @@
                 >First Name<span class="required">*</span></label
               >
               <input type="text" id="firstName" name="firstName" />
-              <span class="error-msg">This field is required</span>
+              <span class="error-msg hidden">This field is required</span>
             </div>
             <div class="last-name">
               <label for="lastName"
                 >Last Name<span class="required">*</span></label
               >
               <input type="text" name="lastName" id="lastName" />
-              <span class="error-msg">This field is required</span>
+              <span class="error-msg hidden">This field is required</span>
             </div>
           </div>
             <!-- Email -->
             <div class="email">
               <label for="email">Email<span class="required">*</span></label>
               <input type="text" name="email" id="email" />
-              <span class="error-msg">This field is required</span>
-              <span class="invalid-email"
+              <span class="error-msg hidden">This field is required</span>
+              <span class="invalid-email hidden"
                 >Please enter a valid email address</span
               >
             </div>
@@ -60,7 +60,7 @@
                 <label for="request">Support Request</label>
               </div>
             </div>
-              <span class="error-msg">Please select a query type</span>
+              <span class="error-msg hidden">Please select a query type</span>
             </div>
             <!-- Message -->
             <div class="message">
@@ -68,7 +68,7 @@
                 >Message<span class="required">*</span></label
               >
               <textarea id="message" name="message"></textarea>
-              <span class="error-msg">This field is required</span>
+              <span class="error-msg hidden">This field is required</span>
             </div>
           </div>
           <div class="consent">
@@ -79,12 +79,13 @@
                 <span class="required">*</span></label
               >
             </div>
-            <span class="error-msg"
+            <span class="error-msg hidden"
               >To submit this form, please consent to being contacted</span
             >
           </div>
-          <button class="btn">Submit</button>
+         
         </form>
+        <button class="btn">Submit</button>
       </article>
       <article class="success-msg hidden">
         <div class="success-msg__header">
@@ -102,7 +103,7 @@
     <!-- Contact Us
 
   First Name
-  <span class="error-msg">This field is required</span>
+  <span class="error-msg hidden">This field is required</span>
 
   Last Name
   This field is required
