@@ -120,6 +120,12 @@ form {
   padding: var(--spacing-150) var(--spacing-300);
   border-radius: 8px;
 }
+/* HOVER EFFECTS ON INPUT BOX */
+input:hover, textarea:hover,
+  input:focus, textarea:focus {
+outline:1px solid var(--button-bg);
+/* border: 1px solid var(--button-bg); */
+}
 .query-btns {
   display: inline-flex;
   flex-direction: column;
@@ -150,6 +156,9 @@ form {
   font-weight: var(--bold-ft-wt);
   font-family: var(--ff);
   line-height: 1.5;
+}
+.btn:hover, .btn:focus {
+  background-color: var(--grey-900);
 }
 /* SUCCESS MESSAGE */
 .success-msg {
