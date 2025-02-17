@@ -18,6 +18,7 @@ btn.addEventListener("click", function () {
       // console.log(`${field.getAttribute("id")} is empty`);
       const selector = `#${field.getAttribute("id")} + .error-msg`;
       console.log(selector);
+      console.log(field.value);
       document.querySelector(`${selector}`).classList.toggle("hidden");
     } else {
       if (field.getAttribute("name") === "query") {
@@ -40,9 +41,6 @@ btn.addEventListener("click", function () {
   if (!isFieldEmpty) {
     document.querySelector('.success-msg').classList.remove('hidden');
     setTimeout( () => document.querySelector('.success-msg').classList.add('hidden'), 3000);
-    for (const field of fields) {
-      field.value = '';
-      field.checked = false;
-    }
+    document.querySelector('form').reset();
   }
 });
