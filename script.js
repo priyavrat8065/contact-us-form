@@ -16,12 +16,14 @@ btn.addEventListener("click", function () {
   }
   let count = 0;
   for (const field of fields) {
+    document.querySelector(`#${field.getAttribute('id')}`).style.border = "1px solid #87a3a6";
     // check if textfield is empty
     if (field.value === "") {
       isFieldEmpty = true;
       const selector = `#${field.getAttribute("id")} + .error-msg`;
       // console.log(selector);
       document.querySelector(`${selector}`).classList.toggle("hidden");
+      document.querySelector(`#${field.getAttribute('id')}`).style.border = '1px solid red';
     } else {
       // check if radio button is checked or not
       if (field.getAttribute("name") === "query") {
@@ -44,30 +46,11 @@ btn.addEventListener("click", function () {
   }
   // Check for email validity
   const email = document.querySelector("#email").value;
-  // if (email.includes('@') ) {
-  //   const [username, domain] = email.split('@');
-  //   console.log(username);
-  //   checkUsrDomValidity(username);
-  //   if (domain.includes('.')){
-  //     checkUsrDomValidity(domain);
-  //   } else {
-  //     console.log("invalid email");
-  //   }
-  // } else {
-  //   if (email !== "") {
-  //     console.log('Email does not inlcude @');
-  //   }
-
-  // }
   if (email !== "") {
-    if (validateEmail(email)) {
-      // console.log("valid");
-  
-    } else {
-      console.log("invalid");
+    if (!validateEmail(email)) {
       document.querySelector('.invalid-email').classList.remove('hidden');
-    }
-  }
+      document.querySelector('#email').style.border = '1px solid red';
+  }}
   if (!isFieldEmpty) {
     // display the success message
     document.querySelector(".success-msg").classList.remove("hidden");
