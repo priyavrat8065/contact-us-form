@@ -14,6 +14,7 @@ btn.addEventListener("click", function () {
     // check if textfield is empty
     if (field.value === "") {
       isFieldEmpty = true;
+      const selector = `#${field.getAttribute('id')} + .error-msg`;
       console.log(selector);
       document.querySelector(`${selector}`).classList.toggle("hidden");
     } else {
@@ -36,6 +37,7 @@ btn.addEventListener("click", function () {
     isFieldEmpty = true;
     document.querySelector(".query .error-msg").classList.toggle("hidden");
   }
+
   if (!isFieldEmpty) {
     // display the success message
     document.querySelector('.success-msg').classList.remove('hidden');
