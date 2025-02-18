@@ -48,6 +48,7 @@ btn.addEventListener("click", function () {
   const email = document.querySelector("#email").value;
   if (email !== "") {
     if (!validateEmail(email)) {
+      isFieldEmpty = true;
       document.querySelector('.invalid-email').classList.remove('hidden');
       document.querySelector('#email').style.border = '1px solid red';
   }}
